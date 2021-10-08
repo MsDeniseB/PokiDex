@@ -1,7 +1,8 @@
-alert('Hello world');
-
-let favoritefood = 'apple'
-document.write(favoritefood); 
-
+let pokemonList = [
+    { name: 'eevee', hight: 1, type: 'normal'},
+    { name: 'weedle', hight: 1, type: 'bug'},
+    { name: 'ekans', hight: 6, type: 'poison'}
+  ];
+ 
 
 
