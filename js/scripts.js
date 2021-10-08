@@ -4,3 +4,4 @@ let favoritefood = 'apple'
 document.write(favoritefood); 
 
 
+
