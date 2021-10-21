@@ -1,0 +1,115 @@
+.icon{
+    width: 100px;
+     height: 100px;
+    }
+  
+    .navigation-list li {
+      display: inline-block;
+      margin-left: 15px;
+    }
+  
+  .logo{
+      width:35px;
+       height: 35px;
+      }
+   
+    .container {
+        display: grid;
+        grid-template-rows: 15% 65% 20%;
+        grid-gap: 5px;
+        height: 100%;
+        width: 100%;
+      }
+     
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border: solid 2px #dfdfdf;
+      }
+
+    nav{
+        margin-top: 20px;
+        flex: 0.8
+      }
+
+    header ul {
+        float: right;
+      }
+      
+    header ul li {
+        display: inline;
+        padding: 10px;
+      
+      }
+      
+    a {
+    color: rgb(43, 143, 168);
+    text-decoration: none;
+  }
+    a:hover{
+    color: rgb(230, 20, 160);
+    transition: 0.3s ease-in;
+  }
+    a:active{
+  color:  #be2a2a;
+  }
+  
+    a:visited{
+  color: rgb(25, 16, 139);
+  }
+  
+    main div {
+    margin: 60px auto;
+    width: 50%;
+  }
+  
+/*$primary-color: #f42444;
+
+$primary-color-lighter: lighten($primary-color, 25%);
+
+$primary-color-darker: darken($primary-color, 30%);
+
+$secondary-color:   #0000ff;
+
+$text-color: #ffffff;
+
+.box__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+%box-shared {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px rgba(0, 0, 0, 0.5);
+  color: $text-color;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.index.html {
+  @extend %box-shared;
+  background-color: $primary-color;
+}
+
+.box-primary-lighter {
+  @extend %box-shared;
+  background-color: $primary-color-lighter;
+}
+
+.box-primary-darker {
+  @extend %box-shared;
+  background-color: $primary-color-darker;
+}
+
+.box-secondary {
+  @extend %box-shared;
+  background-color: $secondary-color;
+}
+*/
