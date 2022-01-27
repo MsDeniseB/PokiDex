@@ -13,26 +13,34 @@
   
   </head>
 
-  <div class="container">
-<header>
-       <img src="image/inball.png" class="icon" alt="picture inside of poke ball ">
-      <nav>
-        <ul role="menu">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html" role="menuitem">About Website</a>
-          </li>
-          <li>
-            <a href="search.html">Search</a>
-          </li>
-        </ul>
-      </nav>
-  </header>
+   <body>
+    <div class="container">
+      <header>
+             <img src="image/inball.png" class="icon" alt="picture inside of poke ball ">
+            <nav>
+              <ul role="menu">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" role="menuitem">About Website</a>
+                </li>
+                <li>
+                  <a href="search.html">Search</a>
+                </li>
+              </ul>
+            </nav>
+        </header>
+        <div>
+          <h1>Pokiedex</h1>
+   
+          <ul class='pokemon-list'></ul>
+        </div>
+   </body>
 
-  <body>
-    <div id="root"></div>
-     <script src="js/scripts.js"></script>
+   <script src="js/promise-polyfill.js"></script> 
+   <script src="js/fetch.umd.js"></script> 
+   <script src="js/scripts.js"></script> 
+
   </body>
 </html> 
