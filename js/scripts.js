@@ -17,7 +17,7 @@ let pokemonRepositoy = (function(){
     };
 
     function addListItem(pokemon){
-      console.log(pokemon)
+
       let pokemonList_ = document.querySelector(".pokemon-list");
       let listpokemon = document.createElement("li");
       let button = document.createElement("button");
@@ -26,15 +26,29 @@ let pokemonRepositoy = (function(){
       button.onclick = (()=>{
       showdetails(pokemon)
       })
+      
       listpokemon.appendChild(button);
       pokemonList_.appendChild(listpokemon);
 
     }
 
     function showdetails(pokemon){
-      alert(`Name: ${pokemon.name} \n
-      Height: ${pokemon.height}
-      Type: ${pokemon.types}`)
+
+      fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
+      .then((res) => res.json())
+      .then((result) => {
+
+        let d = `Name: ${pokemon.name} \n
+           Height: ${result.height}  \n
+           Type: `;
+          result.types.forEach(x=>{
+            d += x.type.name +" "
+          })
+          
+
+       alert(d) 
+      })
+      .catch((err) => console.error(err));
     }
     
 
