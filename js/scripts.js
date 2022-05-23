@@ -36,7 +36,7 @@ let pokemonRepositoy = (function(){
      fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
      .then(res=>res.json())
      .then(pokemon=>{
-      alert(`Name: ${pokemon.name} \n
+        modal.showModal(`Name: ${pokemon.name} \n
       Height: ${pokemon.height}
       Type: ${pokemon.types.map(x=>x.type.name)}`)
      })
