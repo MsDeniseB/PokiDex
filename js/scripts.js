@@ -39,9 +39,12 @@ let pokemonRepositoy = (function(){
         modal.showModal(`Name: ${pokemon.name} \n
       Height: ${pokemon.height}
       Type: ${pokemon.types.map(x=>x.type.name)}`)
+      console.log(response)
+          console.log(response.sprites.back_shiny)
      })
      
-    }
+    } 
+    
     
 
     function loadList(apiUrl) {
@@ -119,6 +122,8 @@ let pokemonRepositoy = (function(){
       let isValidPassword = validatePassword();
       return isValidEmail && isValidPassword;
     }
+
+
         //eror here 4 sum reson
     /* 
     form.addEventListener('submit', (e) => {
