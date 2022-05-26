@@ -40,13 +40,16 @@ let pokemonRepositoy = (function(){
       Height: ${pokemon.height}
       Type: ${pokemon.types.map(x=>x.type.name)}`)
       console.log(response)
-          console.log(response.sprites.back_shiny)
+      console.log(response.sprites.back_shiny)
+          let container = document.querySelector('#image-container');
+
+          // Create an <img> element
+          let myImage = document.createElement('img');
+
      })
      
     } 
     
-    
-
     function loadList(apiUrl) {
       return fetch(apiUrl).then(function (response) {
         return response.json();
